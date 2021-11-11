@@ -6,6 +6,10 @@ Source0:	https://github.com/arduino/BOSSA/archive/refs/heads/nrf.tar.gz
 License:	BSD 3-clause
 Group:		System
 BuildRequires:	wxqt3.1-devel
+BuildRequires:	pkgconfig(Qt5Core)
+BuildRequires:	pkgconfig(Qt5Widgets)
+BuildRequires:	pkgconfig(Qt5Gui)
+BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(readline)
 Provides:	bossac = %{EVRD}
 
