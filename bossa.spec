@@ -29,7 +29,7 @@ Graphical frontend for the BOSSA Atmel SAM (e.g. Arduino) flash tool
 %autosetup -p1 -n BOSSA-nrf
 
 %build
-%make_build WXVERSION=3.1
+%make_build WXVERSION=3.1 VERSION=%{version}-%{release}
 
 %install
 mkdir -p %{buildroot}%{_bindir}
