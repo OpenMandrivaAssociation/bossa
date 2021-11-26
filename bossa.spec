@@ -1,6 +1,6 @@
 Name:		bossa
 Version:	1.9.2
-Release:	0.20210927.1
+Release:	0.20210927.2
 Summary:	Flash utility for Atmel's SAM ARM microcontrollers (e.g. Arduino)
 Source0:	https://github.com/arduino/BOSSA/archive/refs/heads/nrf.tar.gz
 License:	BSD 3-clause
@@ -40,8 +40,8 @@ mkdir -p %{buildroot}%{_bindir}
 install -c -m 755 bin/bossa* %{buildroot}%{_bindir}/
 
 %files
-%{_bindir}/bossa
+%{_bindir}/bossac
 %{_bindir}/bossash
 
 %files ui
-%{_bindir}/bossac
+%{_bindir}/bossa
