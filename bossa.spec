@@ -1,11 +1,11 @@
 Name:		bossa
 Version:	1.9.2
-Release:	0.20210927.2
+Release:	0.20220623.1
 Summary:	Flash utility for Atmel's SAM ARM microcontrollers (e.g. Arduino)
 Source0:	https://github.com/arduino/BOSSA/archive/refs/heads/nrf.tar.gz
 License:	BSD 3-clause
 Group:		System
-BuildRequires:	wxqt3.1-devel
+BuildRequires:	wxqt3.2-devel
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(Qt5Gui)
@@ -31,9 +31,10 @@ Graphical frontend for the BOSSA Atmel SAM (e.g. Arduino) flash tool
 
 %prep
 %autosetup -p1 -n BOSSA-nrf
+sed -i -e 's,wx-config,wx-config-3.2,g' Makefile
 
 %build
-%make_build WXVERSION=3.1 VERSION=%{version}-%{release}
+%make_build WXVERSION=3.2 VERSION=%{version}-%{release}
 
 %install
 mkdir -p %{buildroot}%{_bindir}
