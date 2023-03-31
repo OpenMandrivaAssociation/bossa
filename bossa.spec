@@ -1,6 +1,6 @@
 Name:		bossa
 Version:	1.9.2
-Release:	0.20220623.1
+Release:	0.20220623.2
 Summary:	Flash utility for Atmel's SAM ARM microcontrollers (e.g. Arduino)
 Source0:	https://github.com/arduino/BOSSA/archive/refs/heads/nrf.tar.gz
 License:	BSD 3-clause
