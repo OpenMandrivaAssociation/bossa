@@ -5,6 +5,7 @@ Summary:	Flash utility for Atmel's SAM ARM microcontrollers (e.g. Arduino)
 Source0:	https://github.com/arduino/BOSSA/archive/refs/heads/nrf.tar.gz
 License:	BSD 3-clause
 Group:		System
+BuildRequires:	make
 BuildRequires:	wxqt3.2-devel
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Widgets)
